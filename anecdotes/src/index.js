@@ -5,9 +5,7 @@ const App = (props) => {
   const [selected, setSelected] = useState(0);
   const [points, setPoints] = useState(new Array(anecdotes.length).fill(0));
 
-  //creates a random number between 0 and length of anecdotes array inclusive
   const randNumber = () => Math.floor(Math.random() * anecdotes.length);
-
   const handlePoints = () => {
     const counts = [...points];
     counts[selected] += 1;
