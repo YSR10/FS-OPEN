@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 //Components
 import Header from "./Components/Header";
@@ -34,10 +33,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
 export default App;
